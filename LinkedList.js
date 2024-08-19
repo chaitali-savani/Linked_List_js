@@ -26,10 +26,20 @@ class LinkedList {
     }
    }
    printList(){
+    let curr = this.head;
+        let listString = "";
+        while (curr !== null) {
+            listString += curr.data + " -> ";
+            curr = curr.next;
+        }
+        console.log(listString + "null");
+    } 
     
 
    }
    prepend(ListNode){
+   
+
 
    }
    pop(){
