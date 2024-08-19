@@ -17,7 +17,13 @@ class LinkedList {
 
    
    append(ListNode){
-
+    if (this.head === null) {
+        this.head = ListNode;
+        this.tail = ListNode;
+    } else {
+        this.tail.next = ListNode;
+        this.tail = ListNode;
+    }
    }
    printList(){
 
