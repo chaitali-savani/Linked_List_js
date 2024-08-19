@@ -26,12 +26,36 @@ class LinkedList {
     }
    }
    printList(){
+    
 
    }
    prepend(ListNode){
 
    }
    pop(){
+    let result;
+        //ckeck if linked list is empty
+        if(this.head === null) {
+            console.log("list is empty")
+            return;
+        }
+        // checking if only one node exist
+        if(this.head === this.tail){
+            result = this.head.data;
+            this.head = null;
+            this.tail = null;
+            return result;
+        }
+        //travers the list to get second last node
+        let curr = this.head;
+        while(curr.next !== this.tail){
+            curr = curr.next;
+        }
+        result = this.tail.data;
+        this.tail = curr;
+        this.tail.next = null;
+        return result;
+    }
 
    }
     insertAt(index,ListNode){
