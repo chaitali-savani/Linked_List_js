@@ -38,6 +38,10 @@ class LinkedList {
 
    }
    prepend(ListNode){
+    ListNode.next = this.head;
+    this.head = ListNode;
+    if(this.tail === null)
+        this.tail = ListNode;
    
 
 
