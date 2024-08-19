@@ -121,7 +121,34 @@ class LinkedList {
 
 let list = new LinkedList();
 list.insertAt(0,new Node(1));
+list.printList();
 list.insertAt(3,new Node(4));
+list.printList();
 list.insertAt(1,new Node('A'));
+list.printList();
 list.removeAt(1);
 list.removeAt(3);
+list.append(new Node(5));
+list.prepend(new Node(0));
+list.printList();
+console.log(list.pop());
+list.printList();
+
+list.append(new Node(2));
+list.prepend(new Node('C'));
+list.append(new Node(10));
+
+list.printList();
+
+console.log(list.pop());
+
+list.printList();
+
+list.insertAt(2, new Node(-1));
+list.printList(); 
+
+list.insertAt(0, new Node('x'));
+list.printList();
+list.insertAt(15,new Node('B'));
+list.printList();
+
